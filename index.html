@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to the Quest</title>
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/29/29302.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Cinzel', serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #fff;
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 2s forwards;
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .entry-container {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 2rem;
+      border: 2px solid #c19b6c;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    }
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    button {
+      font-size: 1.2rem;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      background-color: #c19b6c;
+      color: #000;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #a57f55;
+    }
+  </style>
+</head>
+<body>
+  <div class="entry-container">
+    <h1>Welcome, Adventurer</h1>
+    <p>Your quest awaits. Are you ready?</p>
+    <button onclick="location.href='birthday-letter.html'">Click to Enter</button>
+  </div>
+</body>
+</html>
